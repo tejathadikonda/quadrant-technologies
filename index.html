@@ -145,6 +145,32 @@
       z-index: 10;
     }
   </style>
+  <style>
+    header img.logo {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 60px;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0, 140, 255, 0.6);
+      background: white;
+      padding: 5px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    header img.logo:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 25px rgba(0, 140, 255, 0.9);
+    }
+    @media (max-width: 600px) {
+      header img.logo {
+        width: 50px;
+        top: 15px;
+        right: 15px;
+      }
+    }
+</style>
+
 </head>
 <body>
   <header>
