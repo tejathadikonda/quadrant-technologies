@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teja Thadikonda | AI Engineer Portfolio</title>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3075/3075977.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      transition: background 0.4s, color 0.4s;
+    }
+    :root {
+      --bg-color: #f4faff;
+      --text-color: #082567;
+      --card-bg: #ffffff;
+    }
+    [data-theme='dark'] {
+      --bg-color: #0c1a30;
+      --text-color: #e0eaff;
+      --card-bg: #1a2d50;
+    }
+    header {
+      background: linear-gradient(to right, #003973, #e5e5be);
+      padding: 2.5rem 2rem;
+      text-align: center;
+      color: white;
+      position: relative;
+      overflow: hidden;
+    }
+    header::after {
+      content: "";
+      position: absolute;
+      top: -30%;
+      left: -10%;
+      width: 150%;
+      height: 200%;
+      background: radial-gradient(circle at center, rgba(0, 89, 255, 0.1), transparent);
+      z-index: 0;
+      animation: rotate 10s linear infinite;
+    }
+    @keyframes rotate {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    header h1, header p, nav {
+      position: relative;
+      z-index: 1;
+    }
+    header img.logo {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 60px;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+    @media (max-width: 600px) {
+      header img.logo {
+        width: 50px;
+        top: 15px;
+        right: 15px;
+      }
+    }
+    nav {
+      margin-top: 1.5rem;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    .project-card {
+      background: var(--card-bg);
+      border-radius: 10px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
+      transition: transform 0.3s, background 0.3s;
+      border-left: 5px solid #0050ef;
+    }
+    .project-card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 6px 30px rgba(0,0,0,0.2);
+    }
+    .project-card h3 { margin-bottom: 0.5rem; }
+    .project-card a {
+      text-decoration: none;
+      color: #007bff;
+      font-weight: bold;
+    }
+    footer {
+      background: #003973;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+    .skill-badge {
+      background: #e0f0ff;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-size: 14px;
+      color: #003973;
+      border: 1px solid #007bff;
+    }
+    .contact a {
+      display: inline-block;
+      margin: 10px 15px;
+      color: #082567;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .toggle-theme {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #0050ef;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 30px;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      z-index: 10;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Teja Thadikonda</h1>
+    <p>AI Engineer | Web Developer</p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV2BpTtkhGmUriwjhwOpjNHZAQxp5fW0bMwg&s" alt="Quadrant Logo" class="logo">
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I'm an enthusiastic AI Engineer and web developer passionate about solving real-world problems with technology.
+      I recently applied for an opportunity at Quadrant Technologies, and I'm excited to showcase my past work.
+      I enjoy building intuitive interfaces, efficient systems, and meaningful AI applications.
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2>Featured Projects</h2>
+    <div class="project-card">
+      <h3>Portfolio Website</h3>
+      <p>A modern personal portfolio to showcase all my web and AI projects.</p>
+      <a href="https://tejathadikonda.github.io/portfolio/" target="_blank">View Project</a>
+    </div>
+    <div class="project-card">
+      <h3>VJ Tours & Travels</h3>
+      <p>A fully responsive tour and travel agency website with location details and service packages.</p>
+      <a href="https://tejathadikonda.github.io/vj-tours-travels/" target="_blank">Visit Site</a>
+    </div>
+    <div class="project-card">
+      <h3>Shine Dental Clinic</h3>
+      <p>Designed and developed a modern dental clinic website to manage appointments and showcase services.</p>
+      <a href="https://tejathadikonda.github.io/shine-dental/" target="_blank">Explore Site</a>
+    </div>
+    <div class="project-card">
+      <h3>Content Management Tool (Bharat Intern)</h3>
+      <p>A mini CMS built as part of my Bharat Intern internship project.</p>
+      <a href="https://tejathadikonda.github.io/Content-Management-Tool-Bharat-Intern/index.html" target="_blank">Check it Out</a>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <span class="skill-badge">Python</span>
+      <span class="skill-badge">JavaScript</span>
+      <span class="skill-badge">HTML5</span>
+      <span class="skill-badge">CSS3</span>
+      <span class="skill-badge">React</span>
+      <span class="skill-badge">GitHub Pages</span>
+      <span class="skill-badge">TensorFlow</span>
+      <span class="skill-badge">Scikit-learn</span>
+      <span class="skill-badge">MySQL</span>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Feel free to reach out for opportunities or collaborations!</p>
+    <div class="contact">
+      <a href="mailto:tejathadikonda@gmail.com">tejathadikonda@gmail.com</a>
+      <a href="https://www.linkedin.com/in/tejathadikonda/" target="_blank">LinkedIn</a>
+      <a href="https://github.com/tejathadikonda" target="_blank">GitHub</a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Teja Thadikonda. All rights reserved.
+  </footer>
+
+  <button class="toggle-theme" onclick="toggleTheme()">Toggle Dark Mode</button>
+
+  <script>
+    function toggleTheme() {
+      const current = document.documentElement.getAttribute("data-theme");
+      const next = current === "dark" ? "light" : "dark";
+      document.documentElement.setAttribute("data-theme", next);
+    }
+    if (!document.documentElement.hasAttribute("data-theme")) {
+      document.documentElement.setAttribute("data-theme", "light");
+    }
+  </script>
+</body>
+</html>
